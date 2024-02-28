@@ -8,6 +8,59 @@ Constraints on methods						none									honesty, consistency, ...
 
 Agent:
 
+	- Autonomy
+		- Provide work.
+	- Reactivity
+	- Pro-activity
+	- Social ability
+	
+	Agent 1:
+		- Movie1.mp4 -> 5GB
+			- Split into N shards of 50mb each.
+			- 
+
+	Agent 2:
+		- Up to 10GB
+
+	Agent 3:
+
+	Agent 4:
+
+	Agent 5:
+
+	Agent 6:
+
+	Agent 7:
+
+	Agent 8:
+
+
+	Agent 2:
+		- Requests Movie1.mp4
+		- Creates a commitment from all the online agents
+			For what?
+				- They are gonna help make this content available
+
+
+	With time:
+		- Increase availability of data
+		- Bigger fragmentation 
+
+	Commitments:
+		- Shared responsability
+		- Sharing data
+		- Storing
+			- TTL
+	
+	Properties:
+		- If Movie1.mp4 gets frequently requested, then the agents are more likely to have the content to share
+		- As soon as the data isn't requested anymore, its availability will drop, until more requests arrive
+
+
+
+
+
+
 	Beliefs:
 		- My download speed: which can be influenced periodically
 		- My upload speed: which can also be influenced

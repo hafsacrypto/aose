@@ -18,4 +18,7 @@ def test_agent_manager_returns_online_agents(self):
 	agent2 = Agent("Agent2")
 	agent2.online = False
 
-	assert manager.fetch_online_agents() == []
+	manager.register(agent1)
+	manager.register(agent2)
+
+	assert manager.fetch_online_agents() == [agent1.name]

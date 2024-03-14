@@ -133,34 +133,6 @@ class ContentPublisher:
 		pass
 
 
-class Agent:
-
-	def __init__(self):
-		self.beliefs = []
-		self.queue = queue.Queue()
-		self.agent_manager = AgentManager()
-
-	def run(self):
-
-		print("Agent running")
-		while True:
-			print("Agent fetching task")
-			task = self.queue.get()
-
-			if task.finished():
-				# Decide what else to do
-			else:
-				task.run()
-
-				content_fetcher = ContentFetcher()
-
-
-			print("Task fetched", task)
-
-
-	def add_task(self, task):
-		self.queue.put(task)
-
 
 def main():
 	agent = Agent()

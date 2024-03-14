@@ -17,6 +17,12 @@ class AgentWorker:
 			print(datetime.datetime.now())
 
 
+@dataclass
+class Agent:
+	name: str
+	online: bool = True
+
+
 if __name__ == "__main__":
 	agent = AgentWorker()
 	agent.run()

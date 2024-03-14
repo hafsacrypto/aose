@@ -2,6 +2,11 @@
 import datetime
 import time
 
+class DataSplitter:
+
+	def chunks(self):
+		return []
+
 
 class AgentWorker:
 	def run(self):

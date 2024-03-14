@@ -1,5 +1,5 @@
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 import datetime
 import time
 import numpy as np
@@ -21,9 +21,7 @@ class AgentWorker:
 class Agent:
 	name: str
 	online: bool = True
-	tasks: list = [
-		"SearchForOnlineAgents",
-	]
+	tasks: list = field(default_factory=list)
 
 	def initiative(self):
 		"""Should decide what to do based on the current set of tasks it possess"""

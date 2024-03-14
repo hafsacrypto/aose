@@ -1,23 +1,17 @@
+To build the environment:
 
-1) Configure your git username and email
+1) Download Conda (https://docs.anaconda.com/free/miniconda/index.html)
 
-	git config — global user.name “Your Name” git config — global user.email youremail@example.com
+2) Activate your base environment:
 
-2) Generate a new SSH key
+	conda activate base
 
-	ssh-keygen -t ed25519 -C “youremail@example.com”
+2) Install and run conda-devenv on /aose directory:
+	
+	conda install conda-devenv --channel conda-forge
+	conda devenv
+	conda activate agent-oriented-content-provider
 
-3) Let's tell the SSH agent about the new key:
+Once inside the environment, to run the tests:
 
-	eval "$(ssh-agent -s)" ssh-add ~/.ssh/id_ed25519
-
-4) Let's copy the key to clipboard:
-
-	pbcopy < ~/.ssh/id_ed25519.pub
-
-5) 
-	- Open github.com
-	- Go to Settings
-	- Go to SSH and GPG keys
-	- Click "New SSH Key"
-	- Name add whatever, paste the key into the field and just remove the line ending (blank line after the key)
+	pytest .

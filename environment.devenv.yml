@@ -1,0 +1,11 @@
+name: agent-oriented-content-provider
+
+dependencies:
+  - numpy
+  - python>=3.12
+  - pytest
+
+environment:
+  PYTHONPATH:
+    - {{ root }}/src
+  STAGE: DEVELOPMENT

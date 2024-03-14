@@ -21,7 +21,12 @@ class AgentWorker:
 class Agent:
 	name: str
 	online: bool = True
+	tasks: list = [
+		"SearchForOnlineAgents",
+	]
 
+	def initiative(self):
+		"""Should decide what to do based on the current set of tasks it possess"""
 
 if __name__ == "__main__":
 	agent = AgentWorker()

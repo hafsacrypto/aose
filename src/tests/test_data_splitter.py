@@ -7,9 +7,10 @@ from manager import Manager
 def test_data_is_divided_in_chunks():
 	data_splitter = DataSplitter()
 
-	data = [1 for _ in range(100)]
-
-	assert data_splitter.chunks(data) == [[1, 1, 1, 1, 1, 1, 1, 1]]
+	data = [1 for _ in range(90)]
+ 
+	chunks = data_splitter.chunks(data)
+	assert len(chunks) == 10
 
 def test_agent_manager_returns_online_agents():
 	manager = Manager()

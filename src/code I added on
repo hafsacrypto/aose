@@ -1,0 +1,120 @@
+else:
+				task.run()
+
+				content_fetcher = ContentFetcher()
+
+
+			print("Task fetched", task)
+
+
+	def add_task(self, task):
+		self.queue.put(task)
+
+
+def main():
+	agent = Agent()
+	agent.add_task(Content("Naruto"))
+	agent.run()
+
+
+if __name__ == "__main__":
+	main()
+class Agent:
+	name: str
+	online: bool = True
+	tasks: list = [
+		"SearchForOnlineAgents",
+	]
+
+	def initiative(self):
+		"""Should decide what to do based on the current set of tasks it possess"""
+
+if __name__ == "__main__":
+	from aose.src.agent import Agent
+	class AgentWorker:
+		agent = Agent()
+
+def test_agent_initiative(self):
+
+
+	agent = Agent("Agent1", True)
+
+	task = task("SearchForOnlineAgents")
+	agent.add_task(task)
+	assert agent.initiative() == task
+
+from agent import Agent
+
+
+def test_agent_initiative():
+	agent = Agent("Agent1", True)
+
+	task = task("SearchForOnlineAgents")
+	agent.add_task(task)
+
+	assert agent.initiative() == task
+
+	from agent import Agent, DataSplitter
+	from manager import Manager
+
+
+def test_data_is_divided_in_chunks():
+	data_splitter = data_splitter()
+
+	data = [1 for _ in range(90)]
+ 
+	chunks = data_splitter.chunks(data)
+	assert len(chunks) == 10
+
+def test_agent_manager_returns_online_agents():
+	manager = manager()
+
+	agent1 = Agent("Agent1")
+	agent2 = Agent("Agent2")
+	agent2.online = False
+
+	manager.register(agent1)
+	manager.register(agent2)
+
+	assert manager.fetch_online_agents() == [agent1.name]
+
+	class AnimeInitiative {
+		constructor(name, description) {
+			this.name = name;
+			this.description = description;
+			this.status = "not started";
+			}
+}
+		def addInitiative(initiative) ; {
+			if (initiative instanceof AnimeInitiative) {
+				this.initiatives.push(initiative);
+				return true;
+			} else {
+				console.error("Invalid initiative type. Expected AnimeInitiative.");
+				return false;
+			}
+	 }
+		def const (subInitiative = new AnimeInitiative)("Watch Anime Anywhere", "An initiative to make anime accessible to everyone, everywhere.");
+		def const (subInitiative1 = new AnimeInitiative)("Subtitles", "Add subtitles to anime in multiple languages.");
+		def const (subInitiative2 = new AnimeInitiative)("Dubbing", "Dub anime in multiple languages.");	
+
+		animeInitiative.addInitiative(subInitiative1); 
+		animeInitiative.addInitiative(subInitiative2); 
+
+class AnimeAgentTest {
+	private AnimeAgent  animeAgent;
+	private AnimeWatchingHistory watchingHistory;
+	private AnimeRecommendationEngine recommendationEngine;
+
+	void setUp () {
+		MockitoAnnotations.openMocks(this);
+		animeAgent.add = new Animeagent();
+	}
+	void testAddToWatchList(){
+		Anime anime1 = new Anime("Bleach");
+		animeAgent.addToWatchlist(anime1);
+
+		assertEquals(1, animeAgent.getWatchlist().size());
+		assertEquals()
+	}
+}
